@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-HN">
+<head>
+<title>Calculadora Simple con JS</title>
+<meta name="author" content="Roberto E. Murillo D." />
+<meta http-equiv="X-AU-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Una Calculadora Simple con JavaScript" />
+<meta name="keywords" content="calculadora, calculadora simple, calculadora simple con javascript" />
+<link rel="stylesheet" type="text/css" href="style/index.css" media="screen" />
+</head>
+<body>
+<div id="contenedor">
+	<h1>Calculadora Simple con JavaScript</h1>
+	<form>
+		<label for="primerValor">Primer Valor</label>
+		<input type="text" id="primerValor" />
+		<span class="mensaje_error" id="errorPrimerValor"></span>
+		<label for="segundoValor">Segundo Valor</label>
+		<input type="text" id="segundoValor" />
+		<span class="mensaje_error" id="errorSegundoValor"></span>
+		<select id="operador">
+			<option value="sumar">Sumar</option>
+			<option value="restar">Restar</option>
+			<option value="dividir">Dividir</option>
+			<option value="multiplicar">Multiplicar</option>
+		</select>
+		<div id="botones">
+			<button type="button" id="operar">Operar</button>
+			<button type="button" id="borrar">Borrar Todo</button>
+		</div>
+	</form>
+	<h2 id="sub_titulo">Resultado de la Operación</h2>
+	<div id="resultado"></div>
+	<a href='../' title='Ir hacia atrás'>Ir Atrás</a>
+</div>	
+<script src="archivos_js/calculadora.js"></script>
+</body>
+</html>
